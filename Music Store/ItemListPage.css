@@ -1,0 +1,182 @@
+
+
+.mainContainer {
+  min-height: 160vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+body {
+    position: relative;
+    background-color:rgba(21, 31, 32, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .border {
+    width: 100px;
+    height: 10px;
+    background:white;
+    margin: 40px auto;
+}
+
+  .itemList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #pageTitle {
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+
+  .listElements1 {
+    float: left;
+    text-align: center;
+  }
+
+  .listElements2 {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 830px){
+    .listElements1 {
+      padding-left: 100px;
+    }
+  }
+  
+  @media only screen and (max-width: 830px){
+    .listElements2 {
+      padding-left: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 580px){
+    .listElements1 {
+      padding-left: 117px;
+    }
+    .ft-social-list a{
+      font-size: 14.5px;
+    }
+  }
+  
+  @media only screen and (max-width: 580px){
+    .listElements2 {
+      padding-left: 117px;
+    }
+  }
+
+  .images{
+    max-width: 250px;
+    max-width: auto;
+  }
+
+  dd {
+    color: white;
+  }
+
+  .outer {
+    height: 100%;
+  }
+
+  .inner {
+    display: table;
+    margin: 0 auto;
+  }
+
+  dl {
+    float: left;
+    display: inline;
+    position: relative;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+    bottom: 0px;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+  }
+
+  .ft-social-list li {
+    margin: 0.6rem;
+    font-size: 1.25rem;
+  }
+  
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  padding: 30px;
+  transition: all .7s;
+}
+
+.menu-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color .5s;
+}
+
+.menu-item:hover {
+  color: #70aed2;
+}
+
+.nav-active {
+  color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}

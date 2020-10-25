@@ -1,0 +1,157 @@
+html{
+  height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*navbar*/
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    padding: 30px;
+    transition: all .7s;
+  }
+  
+  .menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee;
+    transition: color .5s;
+  }
+  
+  .menu-item:hover {
+    color: #70aed2;
+  }
+  
+  .nav-active {
+    color: #70aed2;
+  }
+  
+  .line1, .line2, .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+  }
+  
+  .change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .change .line2 {
+    opacity: 0;
+  }
+  
+  .change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .custom-navbar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+  }
+  
+  /*end of navbar*/
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+  footer {
+    background-color: #555;
+    color: #bbb;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    line-height: 1.5;
+    width: 100%;
+  }
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+  }
+  .ft-social-list li {
+    margin: 0.6rem;
+    font-size: 1.25rem;
+  }
+
+  body{
+    background: linear-gradient(rgba(20, 23, 24, .78) 100%, transparent 80%),url(images/band.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+  }
+  .contact{
+      margin: 8% 0;
+      background-size: cover;
+      padding: 40px 0;
+  }
+
+  h1{
+      text-align: center;
+      color:white
+  }
+
+  .border {
+      width: 100px;
+      height: 10px;
+      background:white;
+      margin: 40px auto;
+  }
+
+  .contact-form{
+      max-width: 600px;
+      margin: auto;
+      padding: 0 10px;
+      overflow: hidden;
+  }
+
+  .contact-text{
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 16px 0;
+      border: 0;
+      background: #111;
+      padding: 20px 40px;
+      outline: none;
+      color:white;
+      transition: 0.5s;
+  }
+
+  .contact-text:hover{
+      box-shadow: 0 0 10px 4px #34495e;
+  }
+
+  textarea.contact-text{
+      resize: none;
+      height: 120px
+  }
+
+  @media screen and (max-width: 600px){
+      .contact{
+        margin: 30% 0;
+      }
+      .ft-social-list a{
+        font-size: 14.5px;
+      }
+  }
